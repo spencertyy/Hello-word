@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39BA79DB2A93D43D00C3F1B9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39BA79DA2A93D43D00C3F1B9 /* main.cpp */; };
-		39BA79E32A951F7900C3F1B9 /* RoadTripCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39BA79E12A951F7900C3F1B9 /* RoadTripCalculator.cpp */; };
+		39BA79F12A9520C300C3F1B9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39BA79F02A9520C300C3F1B9 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		39BA79D52A93D43D00C3F1B9 /* CopyFiles */ = {
+		39BA79EB2A9520C300C3F1B9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		39BA79D72A93D43D00C3F1B9 /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
-		39BA79DA2A93D43D00C3F1B9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		39BA79E12A951F7900C3F1B9 /* RoadTripCalculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RoadTripCalculator.cpp; path = ../RoadTripCalculator.cpp; sourceTree = "<group>"; };
-		39BA79E22A951F7900C3F1B9 /* RoadTripCalculator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = RoadTripCalculator.hpp; path = ../RoadTripCalculator.hpp; sourceTree = "<group>"; };
+		39BA79ED2A9520C300C3F1B9 /* RoadTripCalculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RoadTripCalculator; sourceTree = BUILT_PRODUCTS_DIR; };
+		39BA79F02A9520C300C3F1B9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		39BA79D42A93D43D00C3F1B9 /* Frameworks */ = {
+		39BA79EA2A9520C300C3F1B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,67 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		39BA79CE2A93D43D00C3F1B9 = {
+		39BA79E42A9520C300C3F1B9 = {
 			isa = PBXGroup;
 			children = (
-				39BA79E12A951F7900C3F1B9 /* RoadTripCalculator.cpp */,
-				39BA79E22A951F7900C3F1B9 /* RoadTripCalculator.hpp */,
-				39BA79D92A93D43D00C3F1B9 /* HelloWorld */,
-				39BA79D82A93D43D00C3F1B9 /* Products */,
+				39BA79EF2A9520C300C3F1B9 /* RoadTripCalculator */,
+				39BA79EE2A9520C300C3F1B9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		39BA79D82A93D43D00C3F1B9 /* Products */ = {
+		39BA79EE2A9520C300C3F1B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				39BA79D72A93D43D00C3F1B9 /* HelloWorld */,
+				39BA79ED2A9520C300C3F1B9 /* RoadTripCalculator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		39BA79D92A93D43D00C3F1B9 /* HelloWorld */ = {
+		39BA79EF2A9520C300C3F1B9 /* RoadTripCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				39BA79DA2A93D43D00C3F1B9 /* main.cpp */,
+				39BA79F02A9520C300C3F1B9 /* main.cpp */,
 			);
-			path = HelloWorld;
+			path = RoadTripCalculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		39BA79D62A93D43D00C3F1B9 /* HelloWorld */ = {
+		39BA79EC2A9520C300C3F1B9 /* RoadTripCalculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 39BA79DE2A93D43D00C3F1B9 /* Build configuration list for PBXNativeTarget "HelloWorld" */;
+			buildConfigurationList = 39BA79F42A9520C300C3F1B9 /* Build configuration list for PBXNativeTarget "RoadTripCalculator" */;
 			buildPhases = (
-				39BA79D32A93D43D00C3F1B9 /* Sources */,
-				39BA79D42A93D43D00C3F1B9 /* Frameworks */,
-				39BA79D52A93D43D00C3F1B9 /* CopyFiles */,
+				39BA79E92A9520C300C3F1B9 /* Sources */,
+				39BA79EA2A9520C300C3F1B9 /* Frameworks */,
+				39BA79EB2A9520C300C3F1B9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HelloWorld;
-			productName = HelloWorld;
-			productReference = 39BA79D72A93D43D00C3F1B9 /* HelloWorld */;
+			name = RoadTripCalculator;
+			productName = RoadTripCalculator;
+			productReference = 39BA79ED2A9520C300C3F1B9 /* RoadTripCalculator */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		39BA79CF2A93D43D00C3F1B9 /* Project object */ = {
+		39BA79E52A9520C300C3F1B9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					39BA79D62A93D43D00C3F1B9 = {
+					39BA79EC2A9520C300C3F1B9 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 39BA79D22A93D43D00C3F1B9 /* Build configuration list for PBXProject "HelloWorld" */;
+			buildConfigurationList = 39BA79E82A9520C300C3F1B9 /* Build configuration list for PBXProject "RoadTripCalculator" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,30 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 39BA79CE2A93D43D00C3F1B9;
-			productRefGroup = 39BA79D82A93D43D00C3F1B9 /* Products */;
+			mainGroup = 39BA79E42A9520C300C3F1B9;
+			productRefGroup = 39BA79EE2A9520C300C3F1B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				39BA79D62A93D43D00C3F1B9 /* HelloWorld */,
+				39BA79EC2A9520C300C3F1B9 /* RoadTripCalculator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		39BA79D32A93D43D00C3F1B9 /* Sources */ = {
+		39BA79E92A9520C300C3F1B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39BA79E32A951F7900C3F1B9 /* RoadTripCalculator.cpp in Sources */,
-				39BA79DB2A93D43D00C3F1B9 /* main.cpp in Sources */,
+				39BA79F12A9520C300C3F1B9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		39BA79DC2A93D43D00C3F1B9 /* Debug */ = {
+		39BA79F22A9520C300C3F1B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -190,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		39BA79DD2A93D43D00C3F1B9 /* Release */ = {
+		39BA79F32A9520C300C3F1B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +235,7 @@
 			};
 			name = Release;
 		};
-		39BA79DF2A93D43D00C3F1B9 /* Debug */ = {
+		39BA79F52A9520C300C3F1B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -249,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		39BA79E02A93D43D00C3F1B9 /* Release */ = {
+		39BA79F62A9520C300C3F1B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -260,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BA79D22A93D43D00C3F1B9 /* Build configuration list for PBXProject "HelloWorld" */ = {
+		39BA79E82A9520C300C3F1B9 /* Build configuration list for PBXProject "RoadTripCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39BA79DC2A93D43D00C3F1B9 /* Debug */,
-				39BA79DD2A93D43D00C3F1B9 /* Release */,
+				39BA79F22A9520C300C3F1B9 /* Debug */,
+				39BA79F32A9520C300C3F1B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		39BA79DE2A93D43D00C3F1B9 /* Build configuration list for PBXNativeTarget "HelloWorld" */ = {
+		39BA79F42A9520C300C3F1B9 /* Build configuration list for PBXNativeTarget "RoadTripCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39BA79DF2A93D43D00C3F1B9 /* Debug */,
-				39BA79E02A93D43D00C3F1B9 /* Release */,
+				39BA79F52A9520C300C3F1B9 /* Debug */,
+				39BA79F62A9520C300C3F1B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 39BA79CF2A93D43D00C3F1B9 /* Project object */;
+	rootObject = 39BA79E52A9520C300C3F1B9 /* Project object */;
 }
