@@ -9,19 +9,19 @@
 using namespace std;
 
 int main() {
-//    Print the numbers from 1 to 10. using for and while loop
+//    Print the numbers from 1 to 10. using for and while loop.
     
     cout << "Print the numbers from 1 to 10. using for and while loop "<< endl;
-        int x = 1 ;
-        int y = 0 ;
+    
         for (int x = 1 ; x<=10; ++x){
             cout << "for:" << x << endl;
         }
-
+    
+        int y = 0 ;
         while ( y < 10){
             y++;
             cout << "while:" << y << endl;
-
+// I more like use the while loop to print the numbers from 1 to 10,because less coding and easler.
         }
     
 //     print all the numbers from the first to the second
@@ -59,7 +59,9 @@ int main() {
     for ( int x = 1; x<=20; ++x){
         if ( x % 2 == 1 )
             cout << x <<endl;
-    }
+    }// I think the "for" loop wihtout the if statement is better used then for loop with the if statement, because more readable and less complicated to write.-
+    
+    
 
 //    Ask a user to enter positive numbers to add up.
     int positiveNubers = 0;
