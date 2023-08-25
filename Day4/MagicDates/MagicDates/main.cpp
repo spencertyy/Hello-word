@@ -23,7 +23,7 @@ int main(int argc, const char * argv[]) {
     long dd1 = date.find("/",mm1+1);
     dd = date.substr(mm1+1,dd1-mm1-1);
     
-    yyyy = date.substr(dd1+1,4);
+    yyyy = date.substr(dd1+1);
     std::string yyyy1 = date.substr(dd1+3,2);
     
     if (std::stoi(mm) <1 || std::stoi(mm)>12 || std::stoi(dd) <1 || std::stoi(dd) >31 || std::stoi(yyyy) <1000|| std::stoi(yyyy) >9999){

@@ -10,7 +10,6 @@
 int main(int argc, const char * argv[]) {
     
     int decimal;
-    int numeral;
     std::cout<<"Enter decimal number:"<<std::endl;
     std::cin >> decimal;
     std::cout<<"Roman numeral version:"<<std::endl;
