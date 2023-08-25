@@ -9,52 +9,52 @@
 using namespace std;
 
 int main() {
-//    Print the numbers from 1 to 10. using for and while loop.
+    //    Print the numbers from 1 to 10. using for and while loop.
     
     cout << "Print the numbers from 1 to 10. using for and while loop "<< endl;
     
-        for (int x = 1 ; x<=10; ++x){
-            cout << "for:" << x << endl;
-        }
+    for (int x = 1 ; x<=10; ++x){
+        cout << "for:" << x << endl;
+    }
     
-        int y = 0 ;
-        while ( y < 10){
-            y++;
-            cout << "while:" << y << endl;
-// I more like use the while loop to print the numbers from 1 to 10,because less coding and easler.
-        }
+    int y = 0 ;
+    while ( y < 10){
+        y++;
+        cout << "while:" << y << endl;
+        // I more like use the while loop to print the numbers from 1 to 10,because less coding and easler.
+    }
     
-//     print all the numbers from the first to the second
+    //     print all the numbers from the first to the second
     int num1;
     int num2;
     cout << "print all the numbers from the first to the second:"<<endl;
     cout << " enter two numbers ";
     cin >> num1 >> num2 ;
-
+    
     int start;
     int end;
-
+    
     if (num1 >= num2){
         start = num2;
         end = num1;
     }else {
         start = num1;
         end = num2;
-
+        
     }
     for (int x = start ; x <= end; x++){
         cout << x << endl;
     }
-
-// Print all the odd numbers between 1 and 20. using (for).
+    
+    // Print all the odd numbers between 1 and 20. using (for).
     cout<< "Print all the odd numbers between 1 and 20. using (for)." <<endl;
-
+    
     for ( int x = 1 ; x <= 20 ; x = x + 2){
-
+        
         cout << x << endl;
     }
-
-//    Print all the odd numbers between 1 and 20. using (if).
+    
+    //    Print all the odd numbers between 1 and 20. using (if).
     cout<< "Print all the odd numbers between 1 and 20 :"<<endl;
     for ( int x = 1; x<=20; ++x){
         if ( x % 2 == 1 )
@@ -62,11 +62,11 @@ int main() {
     }// I think the "for" loop wihtout the if statement is better used then for loop with the if statement, because more readable and less complicated to write.-
     
     
-
-//    Ask a user to enter positive numbers to add up.
+    
+    //    Ask a user to enter positive numbers to add up.
     int positiveNubers = 0;
     int answer = 0 ;
-
+    
     while (positiveNubers>= 0) {
         cout << " enter positive numbers to add up " << endl;
         cin >> positiveNubers ;
@@ -74,7 +74,7 @@ int main() {
     }
     answer = answer - positiveNubers;
     cout << answer <<endl;
-
+    
     
     //Print a multiplication table for the numbers 1 to 5
     cout << "Print a multiplication table for the numbers 1 to 5" << endl;
@@ -88,9 +88,9 @@ int main() {
                 cout << i*j << " ";
             }
         }
-       cout << endl;
+        cout << endl;
     }
     
-     
+    
     return 0;
 }
