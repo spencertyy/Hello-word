@@ -28,6 +28,10 @@
 		39F1CE1A2A9D339B008F238B /* VectorUtil (1).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "VectorUtil (1).h"; path = "../../../../../Downloads/VectorUtil (1).h"; sourceTree = "<group>"; };
 		39F1CE1B2A9D33B4008F238B /* VectorUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VectorUtil.cpp; path = ../../../../../Downloads/VectorUtil.cpp; sourceTree = "<group>"; };
 		39F1CE1D2A9D33BF008F238B /* VectorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VectorTest.cpp; path = ../../../../../Downloads/VectorTest.cpp; sourceTree = "<group>"; };
+		39F1CE1F2A9D9738008F238B /* VectorUtil (1).h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VectorUtil (1).h"; sourceTree = "<group>"; };
+		39F1CE212A9D973D008F238B /* VectorTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VectorTest.cpp; sourceTree = "<group>"; };
+		39F1CE222A9D974B008F238B /* VectorUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VectorUtil.cpp; sourceTree = "<group>"; };
+		39F1CE232A9D988E008F238B /* VectorUtil (1).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VectorUtil (1).h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,9 @@
 		39F1CE072A9D3167008F238B = {
 			isa = PBXGroup;
 			children = (
+				39F1CE212A9D973D008F238B /* VectorTest.cpp */,
+				39F1CE222A9D974B008F238B /* VectorUtil.cpp */,
+				39F1CE1F2A9D9738008F238B /* VectorUtil (1).h */,
 				39F1CE122A9D3167008F238B /* VectorHW */,
 				39F1CE112A9D3167008F238B /* Products */,
 			);
@@ -63,6 +70,7 @@
 				39F1CE1A2A9D339B008F238B /* VectorUtil (1).h */,
 				39F1CE1B2A9D33B4008F238B /* VectorUtil.cpp */,
 				39F1CE1D2A9D33BF008F238B /* VectorTest.cpp */,
+				39F1CE232A9D988E008F238B /* VectorUtil (1).h */,
 			);
 			path = VectorHW;
 			sourceTree = "<group>";
