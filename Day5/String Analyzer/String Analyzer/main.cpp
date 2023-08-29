@@ -39,8 +39,6 @@ int main(int argc, const char * argv[]){
         averageVowelsPerWord = AverageVowelsPerWord(input);
         std::cout <<"Average vowels per word: "<<averageVowelsPerWord<<"\n";
         
-
-        
     }
     return 0;
 }
