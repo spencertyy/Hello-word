@@ -12,6 +12,10 @@ int main(int argc, const char * argv[]) {
     int decimal;
     std::cout<<"Enter decimal number:"<<std::endl;
     std::cin >> decimal;
+    if(decimal<=0){
+        std::cout<< "Invalid input" << std::endl;
+        return 0;
+    }
     std::cout<<"Roman numeral version:"<<std::endl;
     while (decimal>=1000) {
         std::cout<<"M";
@@ -54,8 +58,5 @@ int main(int argc, const char * argv[]) {
         decimal = decimal - 1;
     }
     std::cout <<std::endl;
-    if(decimal>1){
-        std::cout<< "Invalid input" << std::endl;
-    }
     return 0;
 }
