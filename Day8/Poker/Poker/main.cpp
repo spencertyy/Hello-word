@@ -12,62 +12,44 @@ int main(int argc, const char * argv[]) {
     deck = creatDeck();
     int times=0;
 
-    shuffle(deck);
-
-    handCards = getHandCards(deck);
-    
-    while (!isFlush(handCards)) {
-        shuffle(deck);
-        handCards =getHandCards(deck);
-        times+=1;
-    };
     
     
-    // Group HW: Poker , under make by shane.
-    std::cout<<times<<std::endl;
-    for(Card card:handCards){
-        std::cout<<card.rank<<card.suit<<std::endl;
-    };
-    times =0;
-    while (!isStraight(handCards)) {
+    int Straight = 0;
+    int flush = 0;
+    int fullhouse = 0;
+    int straightFlush = 0;
+    int royalFlush = 0;
+    
+    
+    for(int i = 0; i < 1000000; i++){
+        //shuffle cards
         shuffle(deck);
-        handCards =getHandCards(deck);
-        times+=1;
-    };
-    std::cout<<times<<std::endl;
-    for(Card card:handCards){
-        std::cout<<card.rank<<card.suit<<std::endl;
-    };
-    times =0;
-    while (!isStraightFlush(handCards)) {
-        shuffle(deck);
-        handCards =getHandCards(deck);
-        times+=1;
-    };
-    std::cout<<times<<std::endl;
-    for(Card card:handCards){
-        std::cout<<card.rank<<card.suit<<std::endl;
-    };
-    times =0;
-    while (!isRoyalFlush(handCards)) {
-        shuffle(deck);
-        handCards =getHandCards(deck);
-        times+=1;
-    };
-    std::cout<<times<<std::endl;
-    for(Card card:handCards){
-        std::cout<<card.rank<<card.suit<<std::endl;
-    };
-    times =0;
-    while (!isFullHouse(handCards)) {
-        shuffle(deck);
-        handCards =getHandCards(deck);
-        times+=1;
-    };
-    std::cout<<times<<std::endl;
-    for(Card card:handCards){
-        std::cout<<card.rank<<card.suit<<std::endl;
-    };
-    times =0;
+        // get 5 cards
+        handCards = getHandCards(deck);
+        
+        if(isStraight(handCards)){
+            Straight+=1;
+        }
+        if(isFlush(handCards)){
+            flush+=1;
+        }
+        if (isFullHouse(handCards)){
+            fullhouse+=1;
+        }
+        if (isStraightFlush(handCards)){
+            straightFlush+=1;
+        }
+        if(isRoyalFlush(handCards)){
+            royalFlush+=1;
+        }
+    }
+        
+        std::cout<<"isFlush: "<<flush<<std::endl;
+        std::cout<<"isStraight: "<<Straight<<std::endl;
+        std::cout<<"isStraightFlush: "<<straightFlush<<std::endl;
+        std::cout<<"isRoyalFlush: "<<royalFlush<<std::endl;
+        std::cout<<"isFullHouse: "<<fullhouse<<std::endl;
+        
+    
     return 0;
 }
