@@ -128,7 +128,10 @@ bool isRoyalFlush(const std:: vector<Card>& handCard){
         rankInHandCrad.push_back(card.rank);
     }
     sort(rankInHandCrad.begin(), rankInHandCrad.end());
-    if (rankInHandCrad[1]<10) {
+    if (rankInHandCrad[1]<10 ) {
+        return false;
+    }
+    if (rankInHandCrad[0]!=1) {
         return false;
     }
     return true;
