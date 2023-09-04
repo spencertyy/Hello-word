@@ -13,7 +13,7 @@
 #include <vector>
 
 
-struct Card{
+struct Card{//card是一个文件夹包含rank和suit
     int rank;
     std::string suit;
 };
@@ -25,7 +25,7 @@ void swap(Card & x , Card & y);
 std::vector<Card> getHandCards(std::vector<Card>& cards);
 bool isFlush(const std::vector<Card>hands);
 // Group HW: Poker , under make by shane.
-bool isStraight(const std::vector<Card>& handCard);
+bool isStraight(const std::vector<Card>& handCard);//传bool的type到isstraight，（传vector里面的card的箱子
 bool isStraightFlush(const std::vector<Card>& handCard);
 bool isRoyalFlush(const std::vector<Card>& handCard);
 bool isFullHouse(const std::vector<Card>& handCard);
