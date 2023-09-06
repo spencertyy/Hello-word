@@ -31,34 +31,36 @@ int stringToInt (std::string num, int val){
             binary+= digits*pow(2, x);
             //use pow get the quadratic.
             x++;//
-            
         }
-    }
         if (posIndicator == -1){
             binary = -1 * binary;
-            return binary;
+            
         }
-        
-        else if(val == 16){//if is hex
-            int x = 0;
-            for(int i = num.size()-1 ; i>=0 ;i--){
-                toupper(num[i]);
-                //use toupper() change all the num to capital
-                int digits = num[i] - 'A' + 10;
-                hex += digits*pow(16, x);
-                x++;
-            }
-            if (posIndicator == -1){
-                hex = -1 * hex;
-                return hex;
-            }
-            else{
-                
-                return -1;
-            }
-        }
-    return 0;
+        return binary;
     }
+       
+        
+    else if(val == 16){//if is hex
+        int x = 0;
+        for(int i = num.size()-1 ; i>=0 ;i--){
+            toupper(num[i]);
+            //use toupper() change all the num to capital
+            int digits = num[i] - 'A' + 10;
+            hex += digits*pow(16, x);
+            x++;
+        }
+        if (posIndicator == -1){
+            hex = -1 * hex;
+            return hex;
+        }
+        return hex;
+    
+        }    else{
+            
+            return -1;
+    }
+return 0;
+}
 
         
 
