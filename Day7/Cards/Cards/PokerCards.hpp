@@ -18,8 +18,8 @@ struct Card{
     std::string suit;
 };
 
-std::vector<Card> creatDeck();
-void print(std::vector<Card> deck);
+std::vector<Card> createDeck();
+void printDeck(const std::vector<Card>& deck);
 
 
 

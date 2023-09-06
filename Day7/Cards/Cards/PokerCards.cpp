@@ -9,16 +9,19 @@
 #include <iostream>
 #include <string>
 
-std::vector<Card> creatDeck(){
+std::vector<Card> createDeck(){
    std::vector<std::string> Cardstype = {"Spade", "Heart", "Diamond", "Club"};
+    
     
     std::vector<Card> deck;
  
-    for(std::string i : Cardstype){
+    // Build the deck by looping over all suits
+    // and getting all 13 ranks for each suit
+    for(const std::string& i : Cardstype){
         for(int num = 1; num<=13 ; num++){
             Card card;
-            card.rank = num;
-            card.suit = i;
+            card.rank = num;    //num是多少张牌.
+            card.suit = i;      //i是卡的花色.
             deck.push_back(card);
         }
     }
@@ -28,7 +31,7 @@ std::vector<Card> creatDeck(){
 
 
 
-void print(std::vector<Card> deck){
+void printDeck(const std::vector<Card>& deck){
     
     for( int i = 0; i<deck.size();i++){
         

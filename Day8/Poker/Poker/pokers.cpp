@@ -114,8 +114,6 @@ bool isStraight(const std::vector<Card>& handCard){
     return false;
 }
     
-    //    return true;
-    
     bool isStraightFlush(const std::vector<Card>& handCard){
         if (isFlush(handCard) and isStraight(handCard)) {
             return true;

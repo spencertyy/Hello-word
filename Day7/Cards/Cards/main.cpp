@@ -9,8 +9,8 @@
 #include "PokerCards.hpp"
 int main(int argc, const char * argv[]) {
  
-    std::vector<Card> deck = creatDeck();
-    print(deck);
+    std::vector<Card> deck = createDeck();
+    printDeck(deck);
 
 
    
