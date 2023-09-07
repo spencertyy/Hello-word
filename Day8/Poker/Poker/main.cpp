@@ -20,7 +20,7 @@ int main(int argc, const char * argv[]) {
     int straightFlush = 0;
     int royalFlush = 0;
     //创建了一个royalflush的变数只能用int的type来代表他的值是0，
-    int howManyTime;
+    double howManyTime;
     //创建一个howmanytime的变数只能用int的type来代表但是没有创建值。
     std::cout<< "How many time you want to play:"<< std::endl;
     std::cin >> howManyTime;
@@ -49,13 +49,17 @@ int main(int argc, const char * argv[]) {
     }
     
    
-    
-    
-        std::cout<<"Flush: "<<flush<< " in " << howManyTime << " times." << std::endl;
-        std::cout<<"Straight: "<<Straight<< " in "<<howManyTime << " times."<<std::endl;
-        std::cout<<"StraightFlush: "<<straightFlush<< " in " << howManyTime << " times."<<std::endl;
-        std::cout<<"RoyalFlush: "<<royalFlush<< " in "<< howManyTime << " times." <<std::endl;
-        std::cout<<"FullHouse: "<<fullhouse<< " in "<< howManyTime << " times." <<std::endl;
+    double aflush,aStraight,astraightFlush,aroyalFlush,afullhouse;
+    aflush=(flush*100)/howManyTime;
+    aStraight=(Straight*100)/howManyTime;
+    astraightFlush=(straightFlush*100)/howManyTime;
+    aroyalFlush=(royalFlush*100)/howManyTime;
+    afullhouse=(fullhouse*100)/howManyTime;
+        std::cout<<"Flush: "<<aflush<< " in " << howManyTime << " times." << std::endl;
+        std::cout<<"Straight: "<<aStraight<< " in "<<howManyTime << " times."<<std::endl;
+        std::cout<<"StraightFlush: "<<astraightFlush<< " in " << howManyTime << " times."<<std::endl;
+        std::cout<<"RoyalFlush: "<<aroyalFlush<< " in "<< howManyTime << " times." <<std::endl;
+        std::cout<<"FullHouse: "<<afullhouse<< " in "<< howManyTime << " times." <<std::endl;
         
     
     return 0;

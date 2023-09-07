@@ -16,7 +16,7 @@ int stringToInt (std::string num, int val){
     int posIndicator = 1;
     if(num[0] == '-'){
         num = num.substr(1, num.size()-1);
-        posIndicator = -1;
+        posIndicator = -1;//using if and substr to -handle negative numbers
     }
     if(val == 10 ){//if is decimal
         int num_int = stoi(num) ;
