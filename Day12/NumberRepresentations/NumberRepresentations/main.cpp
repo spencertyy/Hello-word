@@ -12,6 +12,7 @@
 #include "NumberRepresentations.hpp"
 
 int main(int argc, const char * argv[]) {
+
     int x[] = { 7, 2, -56, 32, 1, 7, -2, 7 };
     std::cout << "size: " << sizeof(x) << "\n";//the size is 32, because have 8 bits.
 
