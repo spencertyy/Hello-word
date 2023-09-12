@@ -38,10 +38,8 @@ using std::string;
 bool GetBit( uint32_t input, int b )
 {
   // TODO: Fill in. Do not return false.
-    uint32_t x = 1 << b;
-    return (input & x)!=0;
-    
-  return false;
+    uint32_t x = 1 << b;//Create  x = 1.and move b positions
+    return (input & x)!=0; //coz we know x is 1, use "and" with innput and x,so we know if input at b positions is 0 ,we will get 0,if b positions is 1,we will get 1.so if input & x not = 0 we will get true.
 }
 
 
@@ -58,11 +56,10 @@ bool GetBit( uint32_t input, int b )
  */
 bool IsNegative( int input )
 {
-    uint32_t x = 0x80000000;
-        return (input & x) != 0;
+    uint32_t x = 0x80000000;//so x =0x80000000 we will get 1 and 31's 0,so we can use & to check the frist number is 1 or 0 so we will know is negative or not.
+        return (input & x) == 0x80000000;
 
   // TODO: Fill in. Do not return false.
-  return true;
 }
 
 /*
@@ -82,9 +79,9 @@ bool IsNegative( int input )
 int NumBitsSet( uint32_t input )
 {
   // TODO: Fill in. Do not return 0.
-    int count = 0;
+    int count = 0; //see how many 1 in the input,so we use for loop count 32numbers positions ,and use getbit function to see if the input when i positions is true or not,if true count++, then we will get how many 1 inside.
     for (int i = 0; i < 32; ++i) {
-        if (GetBit(input, i)) {
+        if (GetBit(input, i)==true) {
             count++;
         }
     }
@@ -113,7 +110,7 @@ unsigned char GetByte( uint32_t input, int b )
   // TODO: Fill in. Do not return 0.
     if(b< 0 || b> 3){
         return 0;
-    }
+    }// move b*8 positions from input,and then use & with input and 0x000000FF so we will have the same number back from the input.
     input>>=(b*8);
     input &= 0x000000FF;
   return input;
@@ -146,7 +143,8 @@ uint32_t SetByte( uint32_t input, uint8_t value, int b )
         0xFFFF00FF,
         0xFF00FFFF,
         0x00FFFFFF,
-        
+        ////use four diffent uint32_t and  The bits in the corresponding position are changed to 00 and the others are all 1s. so we can use mask[b] to "and " with the input ,then we will have same number but all the 0 from b  position, and "or" with the value move b*8 bits, then we can put the value to in to the b position
+
         };
   return  (mask[b]&input)|value<<b*8;
 }
@@ -162,11 +160,31 @@ int Increment( uint32_t x ){
     uint32_t mask =1;
     while ((mask & x) != 0) {
         x^= mask;
-        mask<<=1;
+        mask = mask << 1;
         }
     x ^=mask;
   return x;
-}
+}// frist create uint32_t mask = 0x00000001 , then use while loop to see if mask "and" with x(0...1) not equal to 0,then we can x ^with mask and move 1 position for mask = to mask,and keep going till they = 0,then we stop to loop and get the mask number ^ with x. so we will get the x +1 .
+//1010 1111
+//0000 0001 ^
+//1010 1110
+//0000 0010 ^
+//1010 1100
+//0000 0100 ^
+//1010 1000
+//0000 1000 ^
+//1010 0000
+//0001 0000 ^
+//1011 0000
+//
+//1010 0000
+//0001 0000
+//0000 0000
+//
+//
+//0111 7
+//-~x
+//~-x
 
 
 /*
@@ -193,8 +211,7 @@ int Increment( uint32_t x ){
  *   Negate(5) -> returns -5
  *   Negate(-1) -> returns 1
  */
-int Negate( int input )
-{
+int Negate( int input ){
   // Note, it may help to do the challenge question (see below) before implementing this one...
   // TODO: Fill in. Do not return 0.
   return Increment(~input);
