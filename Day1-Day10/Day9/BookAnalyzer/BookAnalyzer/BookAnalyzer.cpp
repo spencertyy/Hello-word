@@ -46,7 +46,7 @@ void appearances (std::vector<std::string>words,std::string keyword,int Numchars
             keywordCount++;//如果找到这个words，keywordcount记录出现了几次
             double Percentage = (static_cast<double>(pos) / Numchars) * 100;
             //Percentage=keyword出现时的字符除以总字符数
-percentages.push_back(Percentage);//Percentage result pushbac to percentages
+percentages.push_back(Percentage);//Percentage result pushback to percentages
             std::string surroundStr = words[i-1]+
             " "+words[i]+" "+words[i+1];//三个单词加上两个空格得到大的string
             occurences.push_back(surroundStr);//大的string pushback到occurences的vector

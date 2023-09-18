@@ -165,20 +165,21 @@ int Increment( uint32_t x ){
     x ^=mask;
   return x;
 }// frist create uint32_t mask = 0x00000001 , then use while loop to see if mask "and" with x(0...1) not equal to 0,then we can x ^with mask and move 1 position for mask = to mask,and keep going till they = 0,then we stop to loop and get the mask number ^ with x. so we will get the x +1 .
-//1010 1111
-//0000 0001 ^
-//1010 1110
-//0000 0010 ^
-//1010 1100
-//0000 0100 ^
-//1010 1000
-//0000 1000 ^
-//1010 0000
-//0001 0000 ^
+//1010 1111^
+//0000 0001
+//1010 1110^
+//0000 0010
+//1010 1100^
+//0000 0100
+//1010 1000^
+//0000 1000
+//1010 0000^
+//0001 0000
 //1011 0000
 //
 //1010 0000
 //0001 0000
+//1011 0000
 //0000 0000
 //
 //
@@ -214,7 +215,7 @@ int Increment( uint32_t x ){
 int Negate( int input ){
   // Note, it may help to do the challenge question (see below) before implementing this one...
   // TODO: Fill in. Do not return 0.
-  return Increment(~input);
+  return Increment(~input);//~the input and Increment(coz Increment is +1）.要负数的话需要反转之后在+1.
 }
 
 
