@@ -44,7 +44,7 @@ void myVector::popback(){ //popback(remove the last number in the size)
 }
 
 int myVector::get(int index){//return index位置上的数字
-    std:: cout << index << size_ << std:: endl;
+//    std:: cout << index << size_ << std:: endl;
     assert(index <= size_ && " index out bound error!!");//use assert check if the index is bigger and = then the size,if so we return data[index]
     return data[index];
 }

@@ -23,13 +23,20 @@ void  myVector::destructor(){
     capacity_=0;
     std::cout << "Destructor called"<<std::endl;
 }
+myVector::~myVector(){
+    delete [] data;//delete the old data.
+    data=nullptr;
+    size_=0;
+    capacity_=0;
+    std::cout << "Destructor called"<<std::endl;
+}
 
 void myVector::pushback(int num) {
     // TODO check if we need to growVector
     if (size_ == capacity_) {
         growVector();
     }
-   data[size_] = num;
+   data[size_] = num;//put num to the data size.
    size_ += 1;
 
 }
@@ -105,10 +112,10 @@ myVector::myVector(const myVector&rhs){//this is copy same function doing before
     }
 }
 
-// int myVector::operator[](size_t index) const {
-//     assert(index< size_ && "Out of bounds in Operator[]!");
-//     return data[index];
-//}
+ int& myVector::operator[](size_t index)  {
+     assert(index< size_ && "Out of bounds in Operator[]!");
+     return data[index];
+}
 
 const int& myVector:: operator[](size_t index)const{ // make the date can define the object [index]
     assert(index< size_ && "Out of bounds in Operator[]!");
@@ -132,18 +139,18 @@ bool myVector::operator!=(const myVector& rhs) {
 }
 
 bool myVector::operator<(const myVector& rhs) {
-//    size_t minSize = std::min(size_, rhs.getSize());
-    for(size_t i =0; i<size_;i++){//use for loop see if the size bigger or = trun false
-        if(size_>rhs.getSize()){ //|| size_==rhs.getSize()
-            return false;
-        }
-    }
-    for(size_t i=0;i<size_;i++){//see if the data bigger or == trun false
+    size_t minSize = std::min(size_, rhs.getSize());
+//    for(size_t i =0; i<size_;i++){//use for loop see if the size bigger or = trun false
+//        if(size_>rhs.getSize()){ //|| size_==rhs.getSize()
+//            return false;
+//        }
+//    }
+    for(size_t i=0;i<minSize;i++){//see if the data bigger or == trun false
         if(data[i]>rhs.data[i] ){ //|| data[i]==rhs.data[i] 
             return false;
         }
     }
-    return true;
+    return size_ < rhs.getSize();
 }
 bool myVector::operator<=(const myVector& rhs) {
     return (*this < rhs)||(*this == rhs);

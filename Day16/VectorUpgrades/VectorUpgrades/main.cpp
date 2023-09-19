@@ -48,7 +48,9 @@ int main(int argc, const char * argv[]) {
 //    v1.destructor();//every time call the function need to add the ().
 //    assert(v1.getSize() == 0);
 //    assert(v1.getCapacity() == 0);
-//    
+//
+    std::cout<< v1[0]<<std::endl;
+    
     
     if(v1 == v2){
         std::cout<< "== is ture "<< std::endl;
@@ -85,14 +87,8 @@ int main(int argc, const char * argv[]) {
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
+    v2[0]= 10;
+    std::cout <<v2[0] <<std::endl;
     
     std::cout << "All tests passed!" << std::endl;
     

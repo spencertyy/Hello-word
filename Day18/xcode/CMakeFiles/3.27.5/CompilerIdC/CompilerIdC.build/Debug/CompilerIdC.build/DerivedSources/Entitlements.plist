@@ -4,7 +4,5 @@
 <dict>
 	<key>com.apple.application-identifier</key>
 	<string></string>
-	<key>com.apple.security.get-task-allow</key>
-	<true/>
 </dict>
 </plist>

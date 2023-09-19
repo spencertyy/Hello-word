@@ -17,6 +17,7 @@ private:
 public:
     myVector(const int initialCapacity);
     void destructor();
+    ~myVector();
     void pushback(int num);
     void set(int index, int newValue);
     void growVector( );
@@ -28,7 +29,7 @@ public:
     
     myVector& operator=(const myVector& rhs);
     myVector(const myVector&rhs);//copy construtor
-//    int operator[](size_t index) const;
+    int& operator[](size_t index);
     const int& operator[](size_t index)const;
     bool operator==(const myVector& rhs);
     bool operator!=(const myVector& rhs);

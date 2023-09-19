@@ -84,7 +84,9 @@ T myVector<T>::popback(){
 }
 template <typename T>
 T myVector<T>::get(size_t index) const{
-    return data[index];
+    if(size_ > index && index>=0 ){
+        return data[index];
+    }
 }
 template <typename T>
 void myVector<T>::set( size_t index, T newValue){
